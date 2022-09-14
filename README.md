@@ -134,6 +134,8 @@ The following undergo regular basic testing with their respective MACHINE types.
 
 * rk3588 rock 5b board
 
+* rk3588s radxa nx5 board
+
 ### V. Supporting new Machine
 
 To support new machine, you can either add new machine config in meta-rockchip/conf/machine, or choose a similar existing machine and override it's configurations in local config file.

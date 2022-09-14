@@ -13,6 +13,7 @@ SRC_URI = " \
 	file://${THISDIR}/files/0001-arm64-dts-rock-5b-add-chosen-node.patch \
 	file://${THISDIR}/files/0002-arm64-rockchip_linux_defconfig-disable-rtl8852be.patch \
 	file://${THISDIR}/files/0003-arm64-rockchip_linux_defconfig-disable-rtl8852bu.patch \
+	file://${THISDIR}/files/0001-arm64-dts-radxa-nx5-add-chosen-node.patch \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
