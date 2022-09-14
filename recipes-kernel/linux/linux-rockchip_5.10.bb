@@ -6,10 +6,13 @@ require linux-rockchip.inc
 
 inherit local-git
 
-SRCREV = "72de5a560a44fb81549f1da325a1b3e323a7aaf7"
+SRCREV = "bbe5dbfb385d9d8423957b4a5655e5b31f336dbb"
 SRC_URI = " \
-	git://github.com/JeffyCN/mirrors.git;protocol=https;nobranch=1;branch=kernel-5.10-2022_01_10; \
+	git://github.com/radxa/kernel.git;protocol=https;branch=stable-5.10-rock5; \
 	file://${THISDIR}/files/cgroups.cfg \
+	file://${THISDIR}/files/0001-arm64-dts-rock-5b-add-chosen-node.patch \
+	file://${THISDIR}/files/0002-arm64-rockchip_linux_defconfig-disable-rtl8852be.patch \
+	file://${THISDIR}/files/0003-arm64-rockchip_linux_defconfig-disable-rtl8852bu.patch \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"

@@ -1,0 +1,25 @@
+From 0afec6b3945803bb121000baa10c777467f270cb Mon Sep 17 00:00:00 2001
+From: Stephen Chen <stephen@radxa.com>
+Date: Wed, 14 Sep 2022 10:49:30 +0800
+Subject: [PATCH 2/3] arm64: rockchip_linux_defconfig: disable rtl8852be
+
+Signed-off-by: Stephen Chen <stephen@radxa.com>
+---
+ arch/arm64/configs/rockchip_linux_defconfig | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/arch/arm64/configs/rockchip_linux_defconfig b/arch/arm64/configs/rockchip_linux_defconfig
+index 2554fd2d7026..f09baffa993c 100644
+--- a/arch/arm64/configs/rockchip_linux_defconfig
++++ b/arch/arm64/configs/rockchip_linux_defconfig
+@@ -581,7 +581,6 @@ CONFIG_WL_ROCKCHIP=y
+ CONFIG_WIFI_BUILD_MODULE=y
+ CONFIG_AP6XXX=m
+ CONFIG_BCMDHD_PCIE=y
+-CONFIG_RTL8852BE=m
+ CONFIG_RTL8852BU=m
+ CONFIG_USB_NET_RNDIS_WLAN=y
+ # CONFIG_IEEE802154_DRIVERS is not set
+-- 
+2.29.0
+

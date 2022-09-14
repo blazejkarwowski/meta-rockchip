@@ -42,6 +42,10 @@ In order to build an image with BSP support for a given release, you need to dow
 
 And put the meta-rockchip layer here too.
 
+```shell
+~/yocto $ git clone git@github.com:radxa/meta-rockchip.git -b kirkstone-radxa
+```
+
 Then you need to source the configuration script:
 
 ```shell
@@ -66,6 +70,12 @@ To enable a particular machine, you need to add a MACHINE line naming the BSP to
 
 ```makefile
   MACHINE = "xxx"
+```
+
+For example:
+
+```makefile
+  MACHINE = "rockchip-rk3588-rock-5b"
 ```
 
 All supported machines can be found in meta-rockchip/conf/machine.
@@ -121,6 +131,8 @@ The following undergo regular basic testing with their respective MACHINE types.
 * rk3399 sapphire excavator board
 
 * rk3399pro evb board
+
+* rk3588 rock 5b board
 
 ### V. Supporting new Machine
 
