@@ -72,10 +72,16 @@ To enable a particular machine, you need to add a MACHINE line naming the BSP to
   MACHINE = "xxx"
 ```
 
-For example:
+For example one:
 
 ```makefile
   MACHINE = "rockchip-rk3588-rock-5b"
+```
+
+For example two:
+
+```makefile
+  MACHINE = "rockchip-rk3588s-radxa-nx5-io"
 ```
 
 All supported machines can be found in meta-rockchip/conf/machine.

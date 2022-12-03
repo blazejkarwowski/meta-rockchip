@@ -6,14 +6,12 @@ require linux-rockchip.inc
 
 inherit local-git
 
-SRCREV = "bbe5dbfb385d9d8423957b4a5655e5b31f336dbb"
+SRCREV = "bed81c6807a8e9b1ffcd511b5f448ce8bf151ebd"
 SRC_URI = " \
-	git://github.com/radxa/kernel.git;protocol=https;branch=stable-5.10-rock5; \
+	git://github.com/radxa/kernel.git;protocol=https;branch=linux-5.10-gen-rkr3.4; \
 	file://${THISDIR}/files/cgroups.cfg \
-	file://${THISDIR}/files/0001-arm64-dts-rock-5b-add-chosen-node.patch \
-	file://${THISDIR}/files/0002-arm64-rockchip_linux_defconfig-disable-rtl8852be.patch \
-	file://${THISDIR}/files/0003-arm64-rockchip_linux_defconfig-disable-rtl8852bu.patch \
-	file://${THISDIR}/files/0001-arm64-dts-radxa-nx5-add-chosen-node.patch \
+	file://${THISDIR}/files/0001-arm64-dts-rock-5-add-chosen-node.patch \
+	file://${THISDIR}/files/0001-rockchip_linux_defconfig-disable-rtl8852be-and-rtl88.patch \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"

@@ -1,0 +1,54 @@
+From 86703e3fb11f3cccc870d8b5c14d5c75fd532a38 Mon Sep 17 00:00:00 2001
+From: Stephen Chen <stephen@radxa.com>
+Date: Sat, 3 Dec 2022 15:38:56 +0800
+Subject: [PATCH 1/2] arm64: dts: rock 5: add chosen node
+
+Signed-off-by: Stephen Chen <stephen@radxa.com>
+---
+ arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts            | 2 --
+ arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi | 2 --
+ arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts           | 2 --
+ 3 files changed, 6 deletions(-)
+
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
+index 53536a5fbab0e..79d8985a795ef 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
+@@ -26,8 +26,6 @@ / {
+ 	model = "Radxa ROCK 5B";
+ 	compatible = "radxa,rock-5b", "rockchip,rk3588";
+ 
+-	/delete-node/ chosen;
+-
+ 	vcc12v_dcin: vcc12v-dcin {
+ 		compatible = "regulator-fixed";
+ 		regulator-name = "vcc12v_dcin";
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi b/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi
+index 0cdcf5c769a41..a8130cdbd44f8 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi
++++ b/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi
+@@ -28,8 +28,6 @@ aliases {
+ 		mmc2 = &sdio;
+ 	};
+ 
+-	/delete-node/ chosen;
+-
+ 	vcc12v_dcin: vcc12v-dcin {
+ 		compatible = "regulator-fixed";
+ 		regulator-name = "vcc12v_dcin";
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts b/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
+index 1179833e3051a..b6ff348cf5567 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
+@@ -24,8 +24,6 @@ / {
+ 	model = "Radxa ROCK 5A";
+ 	compatible = "radxa,rock-5a", "rockchip,rk3588";
+ 
+-	/delete-node/ chosen;
+-
+ 	vcc12v_dcin: vcc12v-dcin {
+ 		compatible = "regulator-fixed";
+ 		regulator-name = "vcc12v_dcin";
+-- 
+2.29.0
+
