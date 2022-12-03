@@ -134,7 +134,7 @@ The following undergo regular basic testing with their respective MACHINE types.
 
 * rk3588 rock 5b board
 
-* rk3588s radxa nx5 board
+* rk3588s radxa nx5 io board
 
 ### V. Supporting new Machine
 
