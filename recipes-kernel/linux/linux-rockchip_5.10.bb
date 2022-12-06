@@ -10,8 +10,6 @@ SRCREV = "bed81c6807a8e9b1ffcd511b5f448ce8bf151ebd"
 SRC_URI = " \
 	git://github.com/radxa/kernel.git;protocol=https;branch=linux-5.10-gen-rkr3.4; \
 	file://${THISDIR}/files/cgroups.cfg \
-	file://${THISDIR}/files/0001-arm64-dts-rock-5-add-chosen-node.patch \
-	file://${THISDIR}/files/0001-rockchip_linux_defconfig-disable-rtl8852be-and-rtl88.patch \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
