@@ -1,20 +1,15 @@
-From 86703e3fb11f3cccc870d8b5c14d5c75fd532a38 Mon Sep 17 00:00:00 2001
+From 428b4b5d3b46759da3fad5eb6a29a91253dff472 Mon Sep 17 00:00:00 2001
 From: Stephen Chen <stephen@radxa.com>
-Date: Sat, 3 Dec 2022 15:38:56 +0800
-Subject: [PATCH 1/2] arm64: dts: rock 5: add chosen node
+Date: Thu, 11 May 2023 20:06:13 +0800
+Subject: [PATCH] arm64: dts: rock 5: add chosen node
 
 Signed-off-by: Stephen Chen <stephen@radxa.com>
----
- arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts            | 2 --
- arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi | 2 --
- arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts           | 2 --
- 3 files changed, 6 deletions(-)
 
-diff --git a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
-index 53536a5fbab0e..79d8985a795ef 100644
---- a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
-+++ b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
-@@ -26,8 +26,6 @@ / {
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b-v11.dts b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b-v11.dts
+index 912c175ad02b7..1e7071f229b8b 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b-v11.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b-v11.dts
+@@ -22,8 +22,6 @@ / {
  	model = "Radxa ROCK 5B";
  	compatible = "radxa,rock-5b", "rockchip,rk3588";
  
@@ -23,6 +18,19 @@ index 53536a5fbab0e..79d8985a795ef 100644
  	vcc12v_dcin: vcc12v-dcin {
  		compatible = "regulator-fixed";
  		regulator-name = "vcc12v_dcin";
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
+index d9a3966af85f6..1e30c7262464d 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3588-rock-5b.dts
+@@ -24,8 +24,6 @@ / {
+ 	model = "Radxa ROCK 5B";
+ 	compatible = "radxa,rock-5b", "rockchip,rk3588";
+ 
+-	/delete-node/ chosen;
+-
+ 	fan0: pwm-fan {
+ 		compatible = "pwm-fan";
+ 		#cooling-cells = <2>;
 diff --git a/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi b/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi
 index 0cdcf5c769a41..a8130cdbd44f8 100644
 --- a/arch/arm64/boot/dts/rockchip/rk3588s-radxa-nx5-module.dtsi
@@ -37,18 +45,18 @@ index 0cdcf5c769a41..a8130cdbd44f8 100644
  		compatible = "regulator-fixed";
  		regulator-name = "vcc12v_dcin";
 diff --git a/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts b/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
-index 1179833e3051a..b6ff348cf5567 100644
+index 10e6556a034fd..37667a00520d2 100644
 --- a/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
 +++ b/arch/arm64/boot/dts/rockchip/rk3588s-rock-5a.dts
-@@ -24,8 +24,6 @@ / {
+@@ -23,8 +23,6 @@ / {
  	model = "Radxa ROCK 5A";
  	compatible = "radxa,rock-5a", "rockchip,rk3588";
  
 -	/delete-node/ chosen;
 -
- 	vcc12v_dcin: vcc12v-dcin {
- 		compatible = "regulator-fixed";
- 		regulator-name = "vcc12v_dcin";
+ 	fan0: pwm-fan {
+ 		compatible = "pwm-fan";
+ 		#cooling-cells = <2>;
 -- 
 2.29.0
 
