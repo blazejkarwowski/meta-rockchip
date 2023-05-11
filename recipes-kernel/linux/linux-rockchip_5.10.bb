@@ -10,6 +10,7 @@ SRCREV = "d962a36750f19a2cd767b03584d05553c3067665"
 SRC_URI = " \
 	git://github.com/radxa/kernel.git;protocol=https;branch=linux-5.10-gen-rkr3.4; \
 	file://${THISDIR}/files/cgroups.cfg \
+	file://${THISDIR}/files/wifi.cfg \
 "
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
